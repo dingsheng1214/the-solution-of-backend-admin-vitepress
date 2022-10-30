@@ -1,7 +1,7 @@
 import {defineConfig} from 'vitepress'
 
 export default defineConfig({
-  base: '/',
+  base: '/the-solution-of-backend-admin-vitepress/',
   title: 'Vue3通用后台前端解决方案',
   description: 'Vue3通用后台前端解决方案',
   lang: 'zh-cn',
