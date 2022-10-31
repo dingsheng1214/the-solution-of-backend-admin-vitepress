@@ -60,6 +60,22 @@
   // 内部图标use 引用的dom id
   const symbolId = computed(() => `#icon-${props.icon}`)
 </script>
+<style lang="scss" scoped>
+  .svg-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+  .svg-external-icon {
+    background-color: currentColor;
+    mask-size: cover !important;
+    -webkit-mask-size: cover !important;
+    display: inline-block;
+  }
+</style>
 ```
 
 然后全局注册该组件
@@ -107,5 +123,28 @@ const symbolId = computed(() => `#icon-${props.icon}`)
 
 ## 插件
 
-+ vite插件: vite-plugin-svg-icons
-+ webpack插件: svg-sprite-loader
++ vite插件: [vite-plugin-svg-icons](https://www.npmjs.com/package/vite-plugin-svg-icons)
+  + vite.config.js
+
+  ```js{6-11}
+  plugins: [
+    vue(),
+    vueJsx({
+      // options are passed on to @vue/babel-plugin-jsx
+    }),
+    createSvgIconsPlugin({
+      // 指定需要缓存的图标文件夹
+      iconDirs: [resolve(process.cwd(), 'src/assets/svgs')],
+      // 指定symbolId格式
+      symbolId: 'icon-[dir]-[name]',
+    }),
+  ],
+  ```
+
+  + main.ts
+
+  ```ts
+  import 'virtual:svg-icons-register'
+  ```
+
++ webpack插件: [svg-sprite-loader](https://www.npmjs.com/package/svg-sprite-loader)
