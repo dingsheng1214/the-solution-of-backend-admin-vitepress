@@ -26,6 +26,10 @@ export default defineConfig({
           {text: '总结', link: 'chapter_01/总结'},
         ],
       },
+      {
+        text: '组件',
+        items: [{text: 'SvgIcon', link: 'chapter_02/svg.md'}],
+      },
     ],
   },
 })
