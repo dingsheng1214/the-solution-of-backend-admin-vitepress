@@ -82,7 +82,7 @@ PS：详细的 `HOOKS介绍` 可点击[这里](https://git-scm.com/docs/githooks
 1. 安装依赖：
 
    ```sh
-   npm install --save-dev @commitlint/config-conventional@12.1.4 @commitlint/cli@12.1.4
+   npm install --save-dev @commitlint/config-conventional @commitlint/cli
    ```
 
 2. 创建 `commitlint.config.js` 文件
@@ -134,7 +134,7 @@ PS：详细的 `HOOKS介绍` 可点击[这里](https://git-scm.com/docs/githooks
 1. 安装依赖：
 
    ```sh
-   npm install husky@7.0.1 --save-dev
+   npm install husky --save-dev
    ```
 
 2. 启动 `hooks` ， 生成 `.husky` 文件夹
@@ -258,7 +258,7 @@ husky - commit-msg hook exited with code 1 (error)
 
 [lint-staged](https://github.com/okonet/lint-staged) 可以让你当前的代码检查 **只检查本次修改更新的代码，并在出现错误的时候，自动修复并且推送**
 
-[lint-staged](https://github.com/okonet/lint-staged) 无需单独安装，我们生成项目时，`vue-cli` 已经帮助我们安装过了，所以我们直接使用就可以了
+执行`npm install --save-dev lint-staged`安装lint-staged
 
 1. 修改 `package.json` 配置
 
