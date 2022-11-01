@@ -27,8 +27,11 @@ export default defineConfig({
         ],
       },
       {
-        text: '组件',
-        items: [{text: 'SvgIcon', link: 'chapter_02/svg.md'}],
+        text: '解决方案',
+        items: [
+          {text: '自定义Svg图标组件-SvgIcon', link: 'chapter_02/svg.md'},
+          {text: '登录鉴权', link: 'chapter_02/login.md'},
+        ],
       },
     ],
   },
