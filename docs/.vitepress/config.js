@@ -27,10 +27,12 @@ export default defineConfig({
         ],
       },
       {
-        text: '解决方案',
+        text: '业务解决方案',
         items: [
           {text: '自定义Svg图标组件-SvgIcon', link: 'chapter_02/svg.md'},
-          {text: '登录鉴权', link: 'chapter_02/login.md'},
+          {text: '登录方案解析', link: 'chapter_02/login.md'},
+          {text: '退出方案解析', link: 'chapter_02/logout.md'},
+          {text: '面包屑方案解析', link: 'chapter_02/breadcrumb.md'},
         ],
       },
     ],
