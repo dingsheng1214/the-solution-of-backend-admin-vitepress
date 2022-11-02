@@ -33,6 +33,7 @@ export default defineConfig({
           {text: '登录方案解析', link: 'chapter_02/login.md'},
           {text: '退出方案解析', link: 'chapter_02/logout.md'},
           {text: '面包屑方案解析', link: 'chapter_02/breadcrumb.md'},
+          {text: '国际化解决方案', link: 'chapter_02/i18n.md'},
         ],
       },
     ],
