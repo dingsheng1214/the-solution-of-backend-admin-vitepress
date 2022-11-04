@@ -38,6 +38,7 @@ export default defineConfig({
           {text: '搜索解决方案', link: 'chapter_02/search.md'},
           {text: 'tagviews方案解析', link: 'chapter_02/tagviews.md'},
           {text: '引导页方案解析', link: 'chapter_02/guide.md'},
+          {text: 'Excel导入导出方案解析', link: 'chapter_02/excel.md'},
         ],
       },
     ],
